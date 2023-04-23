@@ -1,0 +1,16 @@
+PODS:
+  - oLib (0.1.0)
+
+DEPENDENCIES:
+  - oLib (from `../`)
+
+EXTERNAL SOURCES:
+  oLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  oLib: 004b3ea1df488dfacdc3ecdee5050abece3c4241
+
+PODFILE CHECKSUM: d5df8487dc5956796258ab29564e8a599f5ead24
+
+COCOAPODS: 1.9.1
