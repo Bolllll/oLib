@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1BA4C8F629892C3C6998F64BC9FF3FAD /* oLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A84AB671AEDC1015DAE79867CBE201 /* oLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28C72E4829F553AF009CFA78 /* Person.h in Headers */ = {isa = PBXBuildFile; fileRef = 28C72E4629F553AF009CFA78 /* Person.h */; };
-		28C72E4929F553AF009CFA78 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C72E4729F553AF009CFA78 /* Person.m */; };
+		28C72E4C29F56686009CFA78 /* Person.h in Headers */ = {isa = PBXBuildFile; fileRef = 28C72E4A29F56686009CFA78 /* Person.h */; };
+		28C72E4D29F56686009CFA78 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C72E4B29F56686009CFA78 /* Person.m */; };
 		2D998BC7ACB168F235F37E3E6F2E1D99 /* Pods-oLib_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D2E3178E5C9D141B73FB6D5D6ACD1C1 /* Pods-oLib_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		545804966B26894EE8C6F8AA6DC6F250 /* Pods-oLib_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 411B86AFB2B1159A6B5E2CC8E26615D9 /* Pods-oLib_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70BF8EBDB19D28AF4DBF928C8B092968 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -45,8 +45,8 @@
 		1D2E3178E5C9D141B73FB6D5D6ACD1C1 /* Pods-oLib_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-oLib_Example-umbrella.h"; sourceTree = "<group>"; };
 		24170585D07F76F31D3792CC66E88BB9 /* oLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "oLib-Info.plist"; sourceTree = "<group>"; };
 		26C317BB5174C4986DDCD66A41C9ADE8 /* Pods_oLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28C72E4629F553AF009CFA78 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		28C72E4729F553AF009CFA78 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		28C72E4A29F56686009CFA78 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = oLib/Classes/Person.h; sourceTree = "<group>"; };
+		28C72E4B29F56686009CFA78 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = oLib/Classes/Person.m; sourceTree = "<group>"; };
 		291004BBFB663D9DE2B19E6562737687 /* Pods-oLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-oLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		411B86AFB2B1159A6B5E2CC8E26615D9 /* Pods-oLib_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-oLib_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -150,11 +150,11 @@
 		53A33239BAEBAB60447A585CC8E97581 /* oLib */ = {
 			isa = PBXGroup;
 			children = (
+				28C72E4A29F56686009CFA78 /* Person.h */,
+				28C72E4B29F56686009CFA78 /* Person.m */,
 				854C94116ABBCB1FCD73B1212E48B2D0 /* ReplaceMe.m */,
 				C8227B33CD1691759FECA17B5E2F7FEB /* Pod */,
 				BB4546A716E2934CB405B5B417A927B9 /* Support Files */,
-				28C72E4629F553AF009CFA78 /* Person.h */,
-				28C72E4729F553AF009CFA78 /* Person.m */,
 			);
 			name = oLib;
 			path = ../..;
@@ -245,7 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA4C8F629892C3C6998F64BC9FF3FAD /* oLib-umbrella.h in Headers */,
-				28C72E4829F553AF009CFA78 /* Person.h in Headers */,
+				28C72E4C29F56686009CFA78 /* Person.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28C72E4929F553AF009CFA78 /* Person.m in Sources */,
+				28C72E4D29F56686009CFA78 /* Person.m in Sources */,
 				CD1EF6E061B584990D76C974B5BC86FC /* oLib-dummy.m in Sources */,
 				8FA0601F042784BB462F9DA7923E7E01 /* ReplaceMe.m in Sources */,
 			);
